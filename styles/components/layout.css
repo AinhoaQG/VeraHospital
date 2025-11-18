@@ -1,0 +1,44 @@
+@import url(../variables.css);
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main);
+    padding-top: 10px;
+}
+
+.perfilNav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10%;
+    gap: 10px;
+}
+.perfilNav img{
+    min-width: 50px;
+    max-width: 70px;
+    border-radius: 50%;
+}
+.perfilNombre{
+    text-align: left;
+}
+
+/* NAV ----------------------*/
+.nav ul li{
+    list-style: none;
+    padding: 10%;
+    transition: ease-in-out;
+}
+.nav ul li:hover{
+    list-style: none;
+    background-color: #84b1ae;
+    font-size: 1.2rem;
+}
+
+
+/* Texto final --------------*/
+.copy{
+    display: flex;
+    padding-left: 10%;
+    align-items: end;
+    
+}

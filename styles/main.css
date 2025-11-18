@@ -1,4 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+/* GENERALES */
+@import url("./resert.css");
+
+/* COMPONENTES */
+@import url("/styles/components/card.css");
+@import url("./components/layout.css");
+
+/* PAGINAS */
+@import url("/styles/pagesCss/index.css");
+@import url("/styles/pagesCss/pacientes.css");
