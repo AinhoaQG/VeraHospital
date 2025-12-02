@@ -1,37 +1,83 @@
 @import url(../variables.css);
-header{
+.sidebar{
     display: flex;
     flex-direction: column;
-    background-color: var(--main);
+    background-color: var(--V2);
     padding-top: 10px;
+    min-width: 250px;
+    height: 100vh;
+    color: var(--B1);
 }
 
-.perfilNav{
+.userNav{
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 10%;
     gap: 10px;
 }
-.perfilNav img{
+.userNav img{
     min-width: 50px;
-    max-width: 70px;
+    max-width: 90px;
     border-radius: 50%;
-}
-.perfilNombre{
-    text-align: left;
+    border: solid 4px var(--V5);
 }
 
+
 /* NAV ----------------------*/
-.nav ul li{
+.side-nav{
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    padding: 10%;
+    padding: 10px;
     transition: ease-in-out;
+    text-decoration: none;
 }
-.nav ul li:hover{
-    list-style: none;
-    background-color: #84b1ae;
-    font-size: 1.2rem;
+.side-nav a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.side-nav a:hover{
+    background-color: var(--V4);
+}
+
+i{
+    margin-right: 10px;
+}
+
+/* TOPBAR -------------------*/
+.topbar {
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 3px solid var(--V5);
+    width: 100%;
+}
+.top-right{
+    display: flex;
+    gap: 10px;
+}
+
+.top-right button {
+    background: var(--grad);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.top-right button:hover {
+    background: var(--gradHover);
 }
 
 
@@ -40,5 +86,5 @@ header{
     display: flex;
     padding-left: 10%;
     align-items: end;
-    
+    color: var(--V5);
 }
