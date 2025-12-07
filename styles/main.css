@@ -4,8 +4,11 @@
 /* COMPONENTES */
 @import url("/styles/components/card.css");
 @import url("./components/layout.css");
+@import url("./components/text.css");
+@import url("./components/btn.css");
+
 
 /* PAGINAS */
 @import url("/styles/pagesCss/index.css");
 @import url("/styles/pagesCss/main.css");
-@import url("/styles/pagesCss/pacientes.css");
+@import url("/styles/pagesCss/listaCitas.css");
