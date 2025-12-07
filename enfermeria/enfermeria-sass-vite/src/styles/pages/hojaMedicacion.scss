@@ -1,0 +1,62 @@
+@use '../components/variables' as variables;
+
+.paciente-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    label {
+        font-weight: bold;
+        color: variables.$A3;
+    }
+
+    select {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid variables.$V5;
+        background: white;
+        font-size: 14px;
+    }
+}
+
+.tabla-medicacion {
+    overflow-x: auto;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    thead {
+        background: variables.$V5;
+
+        th {
+            padding: 10px;
+            color: variables.$A3;
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background: variables.$B1;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        accent-color: variables.$main;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid variables.$V5;
+        border-radius: 5px;
+    }
+}
