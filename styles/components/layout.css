@@ -80,6 +80,17 @@ i{
     background: var(--gradHover);
 }
 
+/* Main --------- */
+.main{
+    margin: 30px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px var(--B1);
+    padding: 10%;
+    justify-content: center;
+    background-color: white;
+}
+
 
 /* Texto final --------------*/
 .copy{

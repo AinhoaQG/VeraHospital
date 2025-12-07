@@ -1,0 +1,9 @@
+@import url(../variables.css);
+.input{
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1px var(--V4);
+    margin-bottom: 30px;
+    width: 97%;
+    height: 50px;
+}

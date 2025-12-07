@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica - Hospital Vera</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root{
+            --A3: #22303B;
+            --A2: #175D8F;
+            --A1: #0B82A3;
+            --main: #008488;
+            --V2: #13A190;
+            --V3: #1EAD84;
+            --V4: #52B498;
+            --V5: #C1DAD5;
+            --B1: #E9EFEE;
+
+            --grad: linear-gradient(120deg, var(--V2) 0%, var(--V4) 100%);
+            --gradHover: linear-gradient(120deg, var(--V3) 0%, var(--V4) 100%);
+        }
+
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: var(--B1);
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar{
+            width: 260px;
+            background: var(--A3);
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            position: fixed;
+        }
+
+        .userNav{text-align:center;}
+        .user-img{width:90px;height:90px;border-radius:50%;object-fit:cover;}
+
+        .side-nav a{
+            display:block;
+            padding:12px;
+            text-decoration:none;
+            color:#fff;
+            margin:6px 0;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .side-nav a:hover{
+            background:var(--gradHover);
+        }
+
+        .copy{
+            text-align:center;
+            font-size:13px;
+            opacity:.7;
+        }
+
+        /* MAIN */
+        main{
+            margin-left:260px;
+            width:calc(100% - 260px);
+        }
+
+        .topbar{
+            height:60px;
+            background:var(--A1);
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            padding:0 20px;
+            color:#fff;
+        }
+
+        .btn-top{
+            background:transparent;
+            border:none;
+            color:#fff;
+            margin-left:10px;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        .content{
+            padding:30px;
+        }
+
+        .card{
+            background:#fff;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 3px 8px rgba(0,0,0,0.1);
+            max-width:1100px;
+        }
+
+        h2{
+            color:var(--A2);
+            margin-bottom:10px;
+        }
+
+        .section-title{
+            margin-top:25px;
+            font-size:18px;
+            font-weight:bold;
+            color:var(--A1);
+        }
+
+        .info-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+            margin-top:15px;
+        }
+
+        .info-item{
+            background:var(--V5);
+            padding:12px;
+            border-radius:8px;
+        }
+
+        .info-item span{
+            font-weight:bold;
+            color:var(--A3);
+        }
+
+        textarea{
+            width:100%;
+            height:120px;
+            padding:10px;
+            border-radius:8px;
+            border:1px solid #ccc;
+            resize:none;
+            margin-top:10px;
+            background:#fff;
+        }
+
+        .btn-registrar{
+            margin-top:20px;
+            background:var(--grad);
+            color:#fff;
+            padding:12px 20px;
+            border-radius:8px;
+            border:none;
+            cursor:pointer;
+            font-size:16px;
+            transition:.3s;
+        }
+
+        .btn-registrar:hover{
+            background:var(--gradHover);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div>
+            <div class="userNav">
+                <img src="./recursos/images/Mujer1.jpg" class="user-img">
+                <h3>Juana Ruíz Perez</h3>
+                <p>Enfermera</p>
+            </div>
+
+            <nav class="side-nav">
+                <a href="#"><i class="fa-solid fa-calendar-check"></i> Lista de Citas</a>
+                <a href="#"><i class="fa-solid fa-user-doctor"></i> Médicos</a>
+                <a href="#"><i class="fa-solid fa-hospital-user"></i> Pacientes</a>
+                <a href="#"><i class="fa-solid fa-file-medical"></i> Historial</a>
+                <a href="#"><i class="fa-solid fa-file-medical"></i> Urgencias</a>
+                <a href="#"><i class="fa-solid fa-file-medical"></i> Triaje</a>
+                <a href="#"><i class="fa-solid fa-gear"></i> Configuración</a>
+            </nav>
+        </div>
+        <div class="copy">&copy; Hospital Vera</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+        <header class="topbar">
+            <button class="btn-top"><i class="fa-solid fa-globe"></i> ES</button>
+            <button class="btn-top"><i class="fa-solid fa-circle-info"></i></button>
+            <button class="btn-top"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h2>Historia Clínica del Paciente</h2>
+
+                <p class="section-title">Datos del Paciente</p>
+                <div class="info-grid">
+                    <div class="info-item"><span>Nombre:</span> María Gómez</div>
+                    <div class="info-item"><span>Edad:</span> 32 años</div>
+                    <div class="info-item"><span>DNI:</span> 78451236</div>
+                    <div class="info-item"><span>Tipo de Sangre:</span> O+</div>
+                    <div class="info-item"><span>Alergias:</span> Ninguna</div>
+                    <div class="info-item"><span>Enfermedades Crónicas:</span> No registradas</div>
+                </div>
+
+                <p class="section-title">Antecedentes Médicos</p>
+                <textarea placeholder="Registrar antecedentes médicos del paciente..."></textarea>
+
+                <p class="section-title">Medicaciones Actuales</p>
+                <textarea placeholder="Registrar medicación actual..."></textarea>
+
+                <p class="section-title">Notas Médicas</p>
+                <textarea placeholder="Registrar notas adicionales o observaciones..."></textarea>
+
+                <button class="btn-registrar">Guardar Historia Clínica</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

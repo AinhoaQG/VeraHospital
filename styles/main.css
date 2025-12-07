@@ -6,9 +6,11 @@
 @import url("./components/layout.css");
 @import url("./components/text.css");
 @import url("./components/btn.css");
+@import url("./components/input.css");
 
 
 /* PAGINAS */
 @import url("/styles/pagesCss/index.css");
 @import url("/styles/pagesCss/main.css");
 @import url("/styles/pagesCss/listaCitas.css");
+@import url("/styles/pagesCss/historialClinico.css");
