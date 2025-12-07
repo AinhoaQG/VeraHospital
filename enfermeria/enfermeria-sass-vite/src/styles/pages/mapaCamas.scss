@@ -1,0 +1,61 @@
+@use '../components/variables';
+.camasLista{
+    display: flex;
+    flex-direction: column;
+}
+
+.cama{
+    padding:25px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 50px;
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:.3s ease;
+    cursor:pointer;
+
+    i{
+        font-size:35px;
+        margin-bottom:10px;
+    }
+
+    span{
+        display:block;
+        font-size:1rem;
+        margin-top:5px;
+        font-weight:bold;
+        color:var(--A3);
+    }
+}
+.cama:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 14px rgba(0,0,0,0.12);
+}
+
+/* Donde esta el nombre, edad...*/
+.info{
+    text-align: left;
+    justify-content: center;
+}
+
+
+/* ESTADOS */
+.libre{
+    display: flex;
+    align-items: center;
+    border-left:8px solid variables.$V3;
+}
+.ocupada{
+    border-left:8px solid #E63946;
+}
+.limpieza{
+    display: flex;
+    align-items: center;
+    border-left:8px solid #FFB703;
+}
+.reservada{
+    border-left:8px solid variables.$A2;
+}
+

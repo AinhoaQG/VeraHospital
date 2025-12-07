@@ -1,12 +1,12 @@
-@import url(../variables.css);
+@use 'variables';
 .sidebar{
     display: flex;
     flex-direction: column;
-    background-color: $V2;
+    background-color: variables.$V2;
     padding-top: 10px;
     min-width: 250px;
     height: 100vh;
-    color: $B1;
+    color: variables.$B1;
 }
 
 .userNav{
@@ -20,7 +20,7 @@
         min-width: 50px;
         max-width: 90px;
         border-radius: 50%;
-        border: solid 4px $V5;
+        border: solid 4px variables.$V5;
     }
 }
 
@@ -44,7 +44,7 @@
         border-radius: 8px;
     }
     a:hover{
-        background-color: $V4;
+        background-color: variables.$V4;
     }
 }
 
@@ -59,7 +59,7 @@ i{
     display: flex;
     justify-content: right;
     align-items: center;
-    border-bottom: 3px solid $V5;
+    border-bottom: 3px solid variables.$V5;
     width: 100%;
 }
 .top-right{
@@ -67,7 +67,7 @@ i{
     gap: 10px;
 
     button {
-        background: $grad;
+        background: variables.$grad;
         color: white;
         border: none;
         padding: 8px 12px;
@@ -77,7 +77,7 @@ i{
     }
 
     button:hover {
-        background: $gradHover;
+        background: variables.$gradHover;
     }
 }
 
@@ -86,7 +86,7 @@ i{
     margin: 30px;
     border: 0;
     border-radius: 10px;
-    box-shadow: 0px 10px 15px var($B1);
+    box-shadow: 0px 10px 15px variables.$B1;
     padding: 10%;
     justify-content: center;
     background-color: white;
@@ -98,5 +98,5 @@ i{
     display: flex;
     padding-left: 10%;
     align-items: end;
-    color: var(--V5);
+    color: variables.$V5;
 }

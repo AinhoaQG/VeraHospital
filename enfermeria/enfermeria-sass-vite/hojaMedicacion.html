@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Vera</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="10" fill="%230eb3b3"/>
+<path fill="white" d="M26 10h-4v8h-8v4h8v8h4v-8h8v-4h-8z"/>
+</svg>'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="userNav">
+            <img src="./src/images/Mujer1.jpg" class="user-img">
+            <h3>Juana Ruíz Perez</h3>
+            <p>Enfermera</p>
+        </div>
+
+        <nav class="side-nav">
+            <a href="#"><i class="fa-solid fa-calendar-check"></i> Lista de Citas</a>
+            <a href="#"><i class="fa-solid fa-user-doctor"></i> Médicos</a>
+            <a href="#"><i class="fa-solid fa-hospital-user"></i> Pacientes</a>
+            <a href="#"><i class="fa-solid fa-file-medical"></i> Historial</a>
+            <a href="#"><i class="fa-solid fa-file-medical"></i> Urgencias</a>
+            <a href="#"><i class="fa-solid fa-file-medical"></i> Triaje</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Configuración</a>
+        </nav>
+        <div class="copy">
+            &copy; Hospital Vera
+        </div>
+    </aside>
+    <main>
+        <header class="topbar">
+            <div class="top-right">
+                <button class="btn-top"><i class="fa-solid fa-globe"></i> ES</button>
+                <button class="btn-top"><i class="fa-solid fa-circle-info"></i></button>
+                <button class="btn-top"><i class="fa-solid fa-right-from-bracket"></i></button>
+            </div>
+        </header>
+        <div class="main">
+            <!--=====Cambio======-->
+
+            <h2>Hoja de Medicación</h2>
+
+            <!-- Selección de paciente -->
+            <div class="paciente-select">
+                <label for="paciente">Paciente:</label>
+                <select id="paciente">
+                    <option>Juan Pérez</option>
+                    <option>María López</option>
+                    <option>Carlos Ruiz</option>
+                </select>
+            </div>
+
+            <!-- Tabla -->
+            <div class="tabla-medicacion">
+                <thead>
+                    <tr>
+                        <th>Medicamento</th>
+                        <th>Dosis</th>
+                        <th>Vía</th>
+                        <th>Horario</th>
+                        <th>Administrado</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>1g</td>
+                        <td>VO</td>
+                        <td>08:00</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="text" placeholder="Notas"></td>
+                    </tr>
+                    <tr>
+                        <td>Enoxaparina</td>
+                        <td>40mg</td>
+                        <td>SC</td>
+                        <td>12:00</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="text" placeholder="Notas"></td>
+                    </tr>
+                    <tr>
+                        <td>Omeprazol</td>
+                        <td>20mg</td>
+                        <td>VO</td>
+                        <td>20:00</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="text" placeholder="Notas"></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

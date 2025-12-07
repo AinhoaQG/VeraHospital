@@ -10,5 +10,5 @@
     $B1: #E9EFEE;
 
     /* Degradados*/
-    $grad: linear-gradient(120deg, var(--V2) 0%, var(--V4) 100%);
-    $gradHover: linear-gradient(120deg, var(--V3) 0%, var(--V4) 100%);
+    $grad: linear-gradient(120deg, $V2 0%, $V4 100%);
+    $gradHover: linear-gradient(120deg, $V3 0%, $V4 100%);

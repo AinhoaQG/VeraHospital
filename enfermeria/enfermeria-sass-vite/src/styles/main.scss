@@ -1,2 +1,8 @@
-@use 'variables';
-@use 'layout';
+@use './components/variables';
+@use './components/layout';
+@use './components/resert';
+@use './components/title';
+
+/* Pages */
+@use './pages/mapaCamas.scss';
+@use './pages/hojaMedicacion.scss';

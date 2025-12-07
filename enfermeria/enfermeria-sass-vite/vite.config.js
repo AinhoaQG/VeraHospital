@@ -6,7 +6,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        mapaCamas: resolve(__dirname, 'mapaCamas.html'),
+        mapaCamas: resolve(__dirname, 'index.html'),
+        hojaMedicacion: resolve(__dirname, 'hojaMedicacion.html'),
       },
     },
   },
