@@ -1,0 +1,10 @@
+
+.title{
+    @apply text-3xl font-bold mb-8;
+    color: var(--main);
+}
+
+.subtitle{
+    @apply block font-semibold mb-1;
+    color: var(--V2);
+}

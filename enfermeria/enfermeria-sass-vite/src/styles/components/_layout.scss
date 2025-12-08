@@ -2,7 +2,7 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    background-color: variables.$V2;
+    background-color: variables.$V1;
     padding-top: 10px;
     min-width: 250px;
     height: 100vh;
@@ -44,7 +44,7 @@
         border-radius: 8px;
     }
     a:hover{
-        background-color: variables.$V4;
+        background: variables.$gradHover;
     }
 }
 

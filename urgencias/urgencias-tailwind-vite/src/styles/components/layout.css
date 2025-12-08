@@ -1,0 +1,4 @@
+.layout{
+    @apply w-64 min-h-screen bg-teal-700 text-white flex flex-col shadow-xl;
+    /*background-color: var(--);*/
+}
