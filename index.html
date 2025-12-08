@@ -1,79 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Vera</title>
-    <link rel="stylesheet" href="./styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Hospital Vera</title>
+  <link rel="stylesheet" href="./styles/pagesCss/index.css">
+  <link rel="stylesheet" href="./styles/components/btn.css">
+    <link rel="icon" type="image/svg+xml" 
+href='data:image/svg+xml,
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="10" fill="%230eb3b3"/>
+<path fill="white" d="M26 10h-4v8h-8v4h8v8h4v-8h8v-4h-8z"/>
+</svg>'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <section class="perfilNav">
-            <div>
-                <img src="./recursos/images/Mujer1.jpg" alt="Me">
-            </div>
-            <div class="perfilNombre">
-                <h2>Nombre</h2>
-                <p>Apellido1</p>
-                <p>Funcion</p>
-            </div>
-        </section>
 
-        <nav class="nav">
-            <ul>
-                <li>Pacientes</li>
-                <li>Historial Clinico</li>
-                <li>Médicos</li>
-                <li>Notificaciones</li>
-                <li>Horarios</li>
-                <li>Configuración</li>
+  <!-- Sección superior con mensaje de bienvenida -->
+  <div class="top-section">
+    <div>
+      <h1>Bienvenido al Hospital Vera</h1>
+      <p>Por favor, inicie sesión para continuar</p>
+    </div>
+  </div>
 
-            </ul>
-        </nav>
-        <div class="copy">
-            &copy Hospital Vera
-        </div>
-    </header>
-    <main>
-        <div class="grid">
-            
-            <a href="" class="card">
-                <h3>Nombre Apellido Apellido</h3>
-                <p>Nº Seg Social / 80 años</p>
-                <p>Ingresado planta 3</p>
-            </a>
+  <!-- Contenedor de login superpuesto -->
+  <div class="login-container">
+    <form class="login-form">
+      <h2>Iniciar Sesión</h2>
 
-            <a href="" class="card">
-                <h3>Nombre Apellido Apellido</h3>
-                <p>Nº Seg Social / 80 años</p>
-                <p>Ingresado planta 3</p>
-            </a>
+      <label for="username">Usuario</label>
+      <input type="text" id="username" placeholder="Ingrese su usuario">
 
-            <a href="" class="card">
-                <h3>Nombre Apellido Apellido</h3>
-                <p>Nº Seg Social / 80 años</p>
-                <p>Ingresado planta 3</p>
-            </a>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Ingrese su contraseña">
 
-            <a href="" class="card">
-                <h3>Nombre Apellido Apellido</h3>
-                <p>Nº Seg Social / 80 años</p>
-                <p>Ingresado planta 3</p>
-            </a>
+      <a href="main.html" class="btn">Ingresar</a>
+    </form>
+  </div>
 
-            <a href="" class="card">
-                <h3>Nombre Apellido Apellido</h3>
-                <p>Nº Seg Social / 80 años</p>
-                <p>Ingresado planta 3</p>
-            </a>
-        </div>
-        <div class="background">
-            
-        </div>
-        
-    </main>
-    <footer>
-
-    </footer>
 </body>
 </html>

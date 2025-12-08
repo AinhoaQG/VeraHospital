@@ -1,125 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Urgencias - Hospital Vera</title>
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Urgencias - Hospital Vera</title>
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 <rect width="48" height="48" rx="10" fill="%230eb3b3"/>
 <path fill="white" d="M26 10h-4v8h-8v4h8v8h4v-8h8v-4h-8z"/>
 </svg>'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/main.css">
 </head>
+
 <body class="bg-gray-100 flex">
 
-  <!-- SIDEBAR -->
-  <aside class="layout">
-      <div class="p-6 text-center border-b border-teal-600">
-          <img src="./src/images/Mujer1.jpg" class="w-30 h-30 rounded-full mx-auto border-4 border-teal-300">
-          <h3 class="text-lg font-semibold mt-2">Juana Ruíz Pérez</h3>
-          <p class="text-sm text-teal-200">Enfermera</p>
-      </div>
+    <!-- SIDEBAR -->
+    <aside class="layout">
+        <div class="p-6 text-center border-b border-teal-600">
+            <img src="./src/images/Mujer1.jpg" class="w-30 h-30 rounded-full mx-auto border-4 border-teal-300">
+            <h3 class="text-lg font-semibold mt-2">Juana Ruíz Pérez</h3>
+            <p class="text-sm text-teal-200">Enfermera</p>
+        </div>
 
-      <nav class="flex-1 p-4 space-y-2">
-            <a  href="/main.html" class="nav"><i class="fa-solid fa-house"></i></i> Inicio</a>
-            <a href="/prescripciones/listaCitas.html" class="nav"><i class="fa-solid fa-calendar-check"></i> Lista de Citas</a>
-            <a href="/prescripciones/historialClinico.html" class="nav"><i class="fa-solid fa-file-medical"></i> Historial Clinico</a>
-            <a href="/enfermeria/enfermeria-sass-vite/dist/index.html" class="nav"><i class="fa-solid fa-bed-pulse"></i> Mapa de camas</a>
-            <a href="/enfermeria/enfermeria-sass-vite/dist/hojaMedicacion.html" class="nav"><i class="fa-solid fa-pills"></i> Hoja de medicación</a>
-            <a href="#" class="nav"><i class="fa-solid fa-truck-medical"></i> Urgencias</a>
+        <nav class="flex-1 p-4 space-y-2">
+            <a href="/main.html" class="nav"><i class="fa-solid fa-house"></i></i> Inicio</a>
+            <a href="/prescripciones/listaCitas.html" class="nav"><i class="fa-solid fa-calendar-check"></i> Lista de
+                Citas</a>
+            <a href="/prescripciones/historialClinico.html" class="nav"><i class="fa-solid fa-file-medical"></i>
+                Historial Clinico</a>
+            <a href="/enfermeria/enfermeria-sass-vite/dist/index.html" class="nav"><i class="fa-solid fa-bed-pulse"></i>
+                Mapa de camas</a>
+            <a href="/enfermeria/enfermeria-sass-vite/dist/hojaMedicacion.html" class="nav"><i
+                    class="fa-solid fa-pills"></i> Hoja de medicación</a>
+            <a href="index.html" class="nav"><i class="fa-solid fa-truck-medical"></i> Urgencias</a>
             <a href="triaje.html" class="nav"><i class="fa-solid fa-file-medical"></i> Triaje</a>
             <a href="#" class="nav"><i class="fa-solid fa-gear"></i> Configuración</a>
         </nav>
 
-      <div class="p-4 text-center text-sm text-teal-200">
-          © Hospital Vera
-      </div>
-  </aside>
-
-  <!-- MAIN CONTENT -->
-  <main class="flex-1">
-      <!-- TOPBAR -->
-      <header class="w-full bg-white shadow p-4 flex justify-end gap-3 border-b">
-          <button class="btn-grad"><i class="fa-solid fa-globe"></i> ES</button>
-          <button class="btn-grad"><i class="fa-solid fa-circle-info"></i></button>
-          <button class="btn-grad"><i class="fa-solid fa-right-from-bracket"></i></button>
-      </header>
-
-      <!-- PAGE CONTENT -->
-      <section class="p-10">
-        <!-- FORMULARIO DE TRIAJE -->
-    <section class="p-10">
-      <div class="bg-white shadow-xl rounded-xl p-10 max-w-4xl mx-auto">
-
-        <h1 class="title">Registro de Triaje</h1>
-
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <!-- Nombre -->
-          <div>
-            <label class="subtitle">Nombre del Paciente</label>
-            <input type="text" class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
-          </div>
-
-          <!-- DNI -->
-          <div>
-            <label class="subtitle">DNI / Identificación</label>
-            <input type="text" class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
-          </div>
-
-
-          <!-- Motivo de Consulta -->
-          <div class="md:col-span-2">
-            <label class="subtitle">Motivo de Consulta</label>
-            <textarea rows="4" class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main"></textarea>
-          </div>
-
-          <!-- Nivel de Prioridad -->
-          <div>
-            <label class="subtitle">Nivel de Prioridad</label>
-            <select class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
-              <option>Alta</option>
-              <option>Media</option>
-              <option>Baja</option>
-            </select>
-          </div>
-
-          <!-- Derivación -->
-          <div>
-            <label class="subtitle">Derivar a</label>
-            <select class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
-              <option>Urgencias generales</option>
-                <option>Traumatología</option>
-              <option>Medicina Interna</option>
-              <option>Oftalmología</option>
-              <option>Pediatría</option>
-              <option>Cardiología</option>
-            </select>
-          </div>
-
-          <!-- Observaciones -->
-          <div class="md:col-span-2">
-            <label class="subtitle">Observaciones</label>
-            <textarea rows="4" class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main"></textarea>
-          </div>
-          
-        </form>
-
-        <!-- Botones -->
-        <div class="mt-8 flex justify-end gap-4">
-          <a href="#" class="btn-grad">
-            Cancelar
-          </a>
-
-          <a href="#" class="btn-grad">
-            Guardar Registro
-          </a>
+        <div class="p-4 text-center text-sm text-teal-200">
+            © Hospital Vera
         </div>
+    </aside>
 
-      </section>
-  </main>
+    <!-- MAIN CONTENT -->
+    <main class="flex-1">
+        <!-- TOPBAR -->
+        <header class="w-full bg-white shadow p-4 flex justify-end gap-3 border-b">
+            <button class="btn-grad"><i class="fa-solid fa-globe"></i> ES</button>
+            <button class="btn-grad"><i class="fa-solid fa-circle-info"></i></button>
+            <button class="btn-grad"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <section class="">
+            <!-- FORMULARIO DE TRIAJE -->
+            <section class="flex justify-center my-10 px-4">
+                <div class="bg-white shadow-xl rounded-xl p-10 w-full max-w-2xl">
+
+                    <h1 class="title">Registro de Triaje</h1>
+
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- Nombre -->
+                        <div>
+                            <label class="subtitle">Nombre del Paciente</label>
+                            <input type="text"
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
+                        </div>
+
+                        <!-- DNI -->
+                        <div>
+                            <label class="subtitle">DNI / Identificación</label>
+                            <input type="text"
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
+                        </div>
+
+
+                        <!-- Motivo de Consulta -->
+                        <div class="md:col-span-2">
+                            <label class="subtitle">Motivo de Consulta</label>
+                            <textarea rows="4"
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main"></textarea>
+                        </div>
+
+                        <!-- Nivel de Prioridad -->
+                        <div>
+                            <label class="subtitle">Nivel de Prioridad</label>
+                            <select
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
+                                <option>Alta</option>
+                                <option>Media</option>
+                                <option>Baja</option>
+                            </select>
+                        </div>
+
+                        <!-- Derivación -->
+                        <div>
+                            <label class="subtitle">Derivar a</label>
+                            <select
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
+                                <option>Urgencias generales</option>
+                                <option>Traumatología</option>
+                                <option>Medicina Interna</option>
+                                <option>Oftalmología</option>
+                                <option>Pediatría</option>
+                                <option>Cardiología</option>
+                            </select>
+                        </div>
+
+                        <!-- Observaciones -->
+                        <div class="md:col-span-2">
+                            <label class="subtitle">Observaciones</label>
+                            <textarea rows="4"
+                                class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main"></textarea>
+                        </div>
+
+                    </form>
+
+                    <!-- Botones -->
+                    <div class="mt-8 flex justify-end gap-4">
+                        <a href="#" class="btn-grad">
+                            Cancelar
+                        </a>
+
+                        <a href="#" class="btn-grad">
+                            Guardar Registro
+                        </a>
+                    </div>
+
+            </section>
+    </main>
 
 </body>
+
 </html>
