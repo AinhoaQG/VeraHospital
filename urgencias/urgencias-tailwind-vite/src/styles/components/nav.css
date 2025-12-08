@@ -1,0 +1,8 @@
+
+.nav{
+    @apply block p-3 rounded hover:bg-teal-500 transition
+}
+
+.nav:hover{
+    background: var(--grad);
+}

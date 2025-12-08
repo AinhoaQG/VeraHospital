@@ -1,0 +1,10 @@
+
+.btn-grad{
+    @apply px-4 py-2 rounded-md text-white inline-flex items-center gap-2 transition;
+    background: var(--grad);
+}
+
+
+.btn-grad:hover{
+    background: var(--gradHover);
+}
