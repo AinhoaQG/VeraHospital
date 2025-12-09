@@ -33,15 +33,33 @@ VeraHospital/
 ├── /prescipciones/
 │   ├── listaCitas.html
 │   ├── detalleCitas.html
-│   └──
+│   └── listaCitas.html
 ├── /enfermeria/
-│   ├── listaCitas.html
-│   ├── detalleCitas.html
-│   └──
+│   └── /enfermeria-sass-vite/
+│       ├── /dist/ 
+│       ├── /src/ 
+│       │   ├── /images/
+│       │   ├── /styles/
+│       │   │   ├── /components/
+│       │   │   ├── /pages/
+│       │   │   └── main.scss
+│       │   └── main.js
+│       ├── vite.config.js
+│       ├── hojaMedicacion.html
+│       └── index.html
 ├── /urgencias/
-│   ├── listaCitas.html
-│   ├── detalleCitas.html
-│   └──
+│   └── /urgencias-tailwind-vite/
+│       ├── /dist/ 
+│       ├── /src/ 
+│       │   ├── /images/
+│       │   ├── /styles/
+│       │   │   ├── variables.css
+│       │   │   └── /components/
+│       │   └── main.css
+│       ├── tailwind.config.js
+│       ├── vite.config.js
+│       ├── triaje.html
+│       └── index.html
 ├── /styles/
 │   ├── /components/
 │   │   ├── btn.css
