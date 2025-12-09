@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Urgencias - Hospital Vera</title>
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<rect width="48" height="48" rx="10" fill="%230eb3b3"/>
+<path fill="white" d="M26 10h-4v8h-8v4h8v8h4v-8h8v-4h-8z"/>
+</svg>'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-BZMl6hAg.css">
+</head>
+<body class="bg-gray-100 flex">
+
+  <!-- SIDEBAR -->
+  <aside class="layout">
+      <div class="p-6 text-center border-b border-teal-600">
+          <img src="./assets/Mujer1-ug6wsaqg.jpg" class="w-30 h-30 rounded-full mx-auto border-4 border-teal-300">
+          <h3 class="text-lg font-semibold mt-2">Juana Ruíz Pérez</h3>
+          <p class="text-sm text-teal-200">Enfermera</p>
+      </div>
+
+      <nav class="flex-1 p-4 space-y-2">
+            <a  href="/main.html" class="nav"><i class="fa-solid fa-house"></i></i> Inicio</a>
+            <a href="/prescripciones/listaCitas.html" class="nav"><i class="fa-solid fa-calendar-check"></i> Lista de Citas</a>
+            <a href="/prescripciones/historialClinico.html" class="nav"><i class="fa-solid fa-file-medical"></i> Historial Clinico</a>
+            <a href="/enfermeria/enfermeria-sass-vite/dist/index.html" class="nav"><i class="fa-solid fa-bed-pulse"></i> Mapa de camas</a>
+            <a href="/enfermeria/enfermeria-sass-vite/dist/hojaMedicacion.html" class="nav"><i class="fa-solid fa-pills"></i> Hoja de medicación</a>
+            <a href="#" class="nav"><i class="fa-solid fa-truck-medical"></i> Urgencias</a>
+            <a href="triaje.html" class="nav"><i class="fa-solid fa-file-medical"></i> Triaje</a>
+            <a href="#" class="nav"><i class="fa-solid fa-gear"></i> Configuración</a>
+        </nav>
+
+      <div class="p-4 text-center text-sm text-teal-200">
+          © Hospital Vera
+      </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-1">
+      <!-- TOPBAR -->
+      <header class="w-full bg-white shadow p-4 flex justify-end gap-3 border-b">
+          <button class="btn-grad"><i class="fa-solid fa-globe"></i> ES</button>
+          <button class="btn-grad"><i class="fa-solid fa-circle-info"></i></button>
+          <button class="btn-grad"><i class="fa-solid fa-right-from-bracket"></i></button>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <section class="p-10">
+          <h1 class="title">Registro de Urgencias</h1>
+
+          <div class="bg-white shadow-md rounded-xl p-8">
+
+              <form class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
+
+                  <!-- Paciente -->
+                  <div>
+                      <label class="subtitle">Paciente</label>
+                      <input type="text" placeholder="Nombre del paciente"
+                             class="w-full border rounded p-3 focus:ring-teal-500 focus:border-teal-500">
+                  </div>
+
+                  <!-- DNI -->
+                  <div>
+                      <label class="subtitle">DNI</label>
+                      <input type="text" placeholder="Documento"
+                             class="w-full border rounded p-3 focus:ring-teal-500 focus:border-teal-500">
+                  </div>
+
+                  <!-- Direccion -->
+                  <div>
+                    <label class="subtitle">Domicilio</label>
+                    <input type="text" placeholder="Domicilio" class="w-full p-3 border border-V5 rounded-md focus:outline-none focus:ring-2 focus:ring-main">
+                  </div>
+
+                  <!-- Hora -->
+                  <div>
+                      <label class="subtitle">Hora de ingreso</label>
+                      <input type="time" class="w-full border rounded p-3 focus:ring-teal-500 focus:border-teal-500">
+                  </div>
+
+
+                  <!-- Motivo -->
+                  <div class="md:col-span-2">
+                      <label class="subtitle">Motivo de Urgencia</label>
+                      <textarea
+                          class="w-full border rounded p-3 h-32 focus:ring-teal-500 focus:border-teal-500"
+                          placeholder="Describa brevemente la urgencia"></textarea>
+                  </div>
+
+                  <!-- Botón -->
+                  <div class="md:col-span-2 text-right">
+                      <a href="#" class="btn-grad">
+                          Registrar Urgencia
+                      </a>
+                  </div>
+              </form>
+          </div>
+      </section>
+  </main>
+
+</body>
+</html>

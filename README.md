@@ -11,7 +11,8 @@ El objetivo es diseñar y programar una página web estática que tiene como fin
 
 Para ello plantee los objetivos, páginas necesarias y componentes que se necesitan.
 
-
+### Link a GitHub Pages
+https://ainhoaqg.github.io/VeraHospital/
 
 ## ESTRUCTURA DEL PROYECTO
 El proyecto esta estructurado en 3 grupos:
