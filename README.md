@@ -69,8 +69,8 @@ VeraHospital/
 │   │   ├── index.css
 │   │   └── resert
 │   ├── main.css
-│   ├── variables
-│   └── resert
+│   ├── variables.css
+│   └── resert.css
 ├── index.html
 ├── main.html
 └── README.md

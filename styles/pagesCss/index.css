@@ -14,7 +14,7 @@ body {
 
 /* Sección superior */
 .top-section {
-    height: 50vh;
+    height: 40vh;
     background: var(--grad);
     display: flex;
     justify-content: center;
