@@ -100,4 +100,6 @@ i{
     padding-left: 10%;
     align-items: end;
     color: var(--V5);
+    margin-top: auto;
+    margin-bottom: 40px;
 }

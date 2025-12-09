@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Vera</title>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="icon" type="image/svg+xml" 
-href='data:image/svg+xml,
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
 <rect width="48" height="48" rx="10" fill="%230eb3b3"/>
 <path fill="white" d="M26 10h-4v8h-8v4h8v8h4v-8h8v-4h-8z"/>
 </svg>'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
     <aside class="sidebar">
         <div class="userNav">
@@ -26,10 +27,14 @@ href='data:image/svg+xml,
             <a href="../main.html"><i class="fa-solid fa-house"></i></i> Inicio</a>
             <a href="#"><i class="fa-solid fa-calendar-check"></i> Lista de Citas</a>
             <a href="historialClinico.html"><i class="fa-solid fa-file-medical"></i> Historial Clinico</a>
-            <a href="../enfermeria/enfermeria-sass-vite/dist/index.html"><i class="fa-solid fa-bed-pulse"></i> Mapa de camas</a>
-            <a href="../enfermeria/enfermeria-sass-vite/dist/hojaMedicacion.html"><i class="fa-solid fa-pills"></i> Hoja de medicación</a>
-            <a href="../urgencias/urgencias-tailwind-vite/dist/index.html"><i class="fa-solid fa-truck-medical"></i> Urgencias</a>
-            <a href="../urgencias/urgencias-tailwind-vite/dist/triaje.html"><i class="fa-solid fa-file-medical"></i> Triaje</a>
+            <a href="../enfermeria/enfermeria-sass-vite/dist/index.html"><i class="fa-solid fa-bed-pulse"></i> Mapa de
+                camas</a>
+            <a href="../enfermeria/enfermeria-sass-vite/dist/hojaMedicacion.html"><i class="fa-solid fa-pills"></i> Hoja
+                de medicación</a>
+            <a href="../urgencias/urgencias-tailwind-vite/dist/index.html"><i class="fa-solid fa-truck-medical"></i>
+                Urgencias</a>
+            <a href="../urgencias/urgencias-tailwind-vite/dist/triaje.html"><i class="fa-solid fa-file-medical"></i>
+                Triaje</a>
             <a href="#"><i class="fa-solid fa-gear"></i> Configuración</a>
         </nav>
         <div class="copy">
@@ -44,32 +49,78 @@ href='data:image/svg+xml,
                 <button class="btn-top"><i class="fa-solid fa-right-from-bracket"></i></button>
             </div>
         </header>
-        
-        <div class="main">
-            <h2 class="title">Detalles de la Cita</h2>
 
-                <div class="info-grid">
-                    <div class="info-item"><span>Paciente:</span> María Gómez</div>
-                    <div class="info-item"><span>Doctor:</span> Dr. Luis Hernández</div>
-                    <div class="info-item"><span>Fecha:</span> 12/03/2025</div>
-                    <div class="info-item"><span>Hora:</span> 09:30 AM</div>
-                    <div class="info-item"><span>Motivo:</span> Consulta General</div>
-                    <div class="info-item"><span>Estado:</span> Confirmada</div>
+        <div class="main">
+
+            <h1 class="title">Lista de Citas</h1>
+
+            <div class="citas-container">
+
+                <div class="cita">
+                    <div class="card-citas">
+                        <div class="paciente">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="title">Marta Gómez</p>
+                        </div>
+                        <div>
+                            <div class="item"><i class="fa-solid fa-user-doctor"></i> <span class="subtitle">Dr. Antonio Pérez – Cardiología</span> </div>
+                            <div class="item"> <div><i class="fa-solid fa-cake-candles"></i></div> <div class="subtitle"> 63 años</div></div>
+                            <div class="item"><i class="fa-solid fa-clock"></i> <span class="subtitle">Hora: 10:30</span>  </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="detalleCita.html">Ver detalles</a>
                 </div>
 
-                <br>
-                <p class="title">Prescripción / Registro</p>
-                <textarea class="input" placeholder="Escriba aquí la prescripción médica o registro de la consulta..."></textarea>
-                <br>
-                <a class="btn" href="#">Guardar Registro</a>
-        </div>
-        <div class="background">
-            
-        </div>
-        
+                <div class="cita">
+                    <div class="card-citas">
+                        <div class="paciente">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="title">Marta Gómez</p>
+                        </div>
+                        <div>
+                            <div class="item"><i class="fa-solid fa-user-doctor"></i> <span class="subtitle">Dr. Antonio Pérez – Cardiología</span> </div>
+                            <div class="item"> <div><i class="fa-solid fa-cake-candles"></i></div> <div class="subtitle"> 63 años</div></div>
+                            <div class="item"><i class="fa-solid fa-clock"></i> <span class="subtitle">Hora: 10:30</span>  </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="detalleCita.html">Ver detalles</a>
+                </div>
+
+                <div class="cita">
+                    <div class="card-citas">
+                        <div class="paciente">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="title">Marta Gómez</p>
+                        </div>
+                        <div>
+                            <div class="item"><i class="fa-solid fa-user-doctor"></i> <span class="subtitle">Dr. Antonio Pérez – Cardiología</span> </div>
+                            <div class="item"> <div><i class="fa-solid fa-cake-candles"></i></div> <div class="subtitle"> 63 años</div></div>
+                            <div class="item"><i class="fa-solid fa-clock"></i> <span class="subtitle">Hora: 10:30</span>  </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="detalleCita.html">Ver detalles</a>
+                </div>
+
+                <div class="cita">
+                    <div class="card-citas">
+                        <div class="paciente">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="title">Marta Gómez</p>
+                        </div>
+                        <div>
+                            <div class="item"><i class="fa-solid fa-user-doctor"></i> Dr. Antonio Pérez – Cardiología</div>
+                            <div class="item"> <div><i class="fa-solid fa-cake-candles"></i></div> <div class="subtitle"> 63 años</div></div>
+                            <div class="item"><i class="fa-solid fa-clock"></i> <span class="subtitle">Hora: 10:30</span>  </div>
+                        </div>
+                    </div>
+                    <a class="btn" href="detalleCita.html">Ver detalles</a>
+                </div>
+            </div>
+
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

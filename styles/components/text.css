@@ -1,6 +1,11 @@
+@import url(../variables.css);
 .title{
     margin-bottom: 10px;
     margin-top: 10px;
     color: var(--main);
     font-weight: bold;
+}
+
+.subtitle{
+    color: var(--V2);
 }

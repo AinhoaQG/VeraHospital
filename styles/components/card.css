@@ -1,18 +1,78 @@
 @import url(../variables.css);
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    gap: 20px; 
+    gap: 20px;
     padding: 20px;
     margin: 30px;
 
 }
 
-.card{
+.card {
     background-color: var(--B1);
     padding: 20px;
     border-radius: 5px;
     text-decoration: none;
-    color:black;
+    color: black;
+}
+
+
+/* Lista de citas*/
+.citas-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cita {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px var(--V4);
+}
+.cita:nth-child(odd) {
+  background: white;
+  border-left-color: var(--V5);
+}
+
+.cita:nth-child(even) {
+  background: var(--B1); /* gris verdoso suave */
+  border-left-color: var(--V3);
+}
+
+.card-citas {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.paciente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.paciente i{
+    font-size: 30px;
+    color: var(--V1);
+    margin-bottom: 10px;
+}
+
+.item {
+    width: 150%;
+    display: flex;
+    color: var(--V1);
+}
+
+
+.item i {
+    color: var(--V1);
+    margin-right: 6px;
 }
