@@ -13,5 +13,5 @@
 
     /* Degradados*/
     --grad: linear-gradient(120deg, var(--V2) 0%, var(--V4) 100%);
-    --gradHover: linear-gradient(120deg, var(--V3) 0%, var(--V4) 100%);
+    --gradHover: linear-gradient(120deg, var(--V1) 0%, var(--V3) 100%);
 }

@@ -3,8 +3,10 @@
     padding: 5px;
     padding: 10px 10px;
     border-radius: 7px;
-    border: solid 1px;
     background: var(--grad);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     transition: ease-in;
     color: var(--B1);
